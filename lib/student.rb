@@ -47,6 +47,7 @@ class Student
   end
 
   def self.new_from_db(row)
+    puts "#{row}"
     student = self.new(row[1],row[2])
     puts student.name
     puts student.grade
